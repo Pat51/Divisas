@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Divisas"
+             x:Class="Divisas.MainPage">
+    <ScrollView>
+          <StackLayout Padding="10" Spacing="20">
+             
+             <Label Text="Divisas" 
+                    FontSize="30"
+                    FontAttributes="Bold"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+
+            <Label Text="Ingrese el valor en pesos y presione convertir" 
+                    FontSize="20"
+                HorizontalOptions="Center"
+               VerticalOptions="Center" />
+
+            <StackLayout>
+                <Label Text="Pesos:" 
+                    FontSize="20"
+                HorizontalOptions="Start"
+               VerticalOptions="Center"/>
+                <Entry x:Name="pesosEntry"
+                       Placeholder="Ingrese valor en pesos"
+                       Keyboard="Numeric"
+                       FontSize="20"
+                      HorizontalOptions="FillAndExpand"
+                      VerticalOptions="Center"/>
+            </StackLayout>
+            <Button x:Name="botonConvertir"
+                       Text="Convertir"
+                    BackgroundColor="Green"
+                    FontSize="20"
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="Center">
+              </Button>
+            <StackLayout>
+                <Label Text="Dolares:" 
+                    FontSize="20"
+                HorizontalOptions="Start"
+               VerticalOptions="Center"/>
+                <Entry x:Name="dollarsEntry"
+                       Placeholder="Ingrese valor en dolares"
+                       IsEnabled="False"
+                       FontSize="20"
+                      HorizontalOptions="FillAndExpand"
+                      VerticalOptions="Center"/>
+            </StackLayout>
+            <StackLayout>
+                <Label Text="Euros:" 
+                    FontSize="20"
+                HorizontalOptions="Start"
+               VerticalOptions="Center"/>
+                <Entry x:Name="eurosEntry"
+                       Placeholder="Ingrese valor en euros"
+                       IsEnabled="False"
+                       FontSize="20"
+                      HorizontalOptions="FillAndExpand"
+                      VerticalOptions="Center"/>
+            </StackLayout>
+            <StackLayout>
+                <Label Text="Libras:" 
+                    FontSize="20"
+                HorizontalOptions="Start"
+               VerticalOptions="Center"/>
+                <Entry x:Name="poundsEntry"
+                       Placeholder="Ingrese valor en libras"
+                       IsEnabled="False"
+                       FontSize="20"
+                      HorizontalOptions="FillAndExpand"
+                      VerticalOptions="Center"/>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
